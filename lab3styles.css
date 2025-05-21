@@ -1,0 +1,102 @@
+.hf {
+    background-color: rgb(255, 0, 132);
+    color: rgb(162, 255, 0);
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.hf h1 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(237, 114, 114);
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+.nav li {
+    display: inline;
+}
+.nav li a {
+    color: rgb(234, 0, 255);
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.nav li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    gap: 2%;
+}
+
+.main {
+    background-color: #fffbe7;
+    width: 65%;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.sidebar {
+    background-color: white;
+    width: 30%;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar:hover {
+    background: #b5aeea;
+    color: #dd7070;
+}
+
+form label {
+    font-weight: bold;
+}
+form input[type="text"] {
+    width: 150px;
+    transition: width 0.3s;
+    padding: 5px;
+    margin-left: 10px;
+}
+form input[type="text"]:focus {
+    width: 250px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 98%;
+    }
+    .main, .sidebar {
+        width: 98%;
+        margin: 10px auto;
+    }
+}
